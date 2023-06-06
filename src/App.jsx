@@ -14,7 +14,7 @@ return (
 <>
     
     <Header />
-   <Navbar/> 
+  
 
 <About/>
 <Experience/>

@@ -11,7 +11,7 @@
     border: 1px solid transparent;
     transition: var(--transition);
 }
-
+    
 .experience__container>div:hover{
     background: transparent;
     border-color: var(--color-primary-variant);

@@ -10,7 +10,7 @@ const Footer = () => {
     return (
       <div className="footer__container">
         <a href="/" className="footer__logo">
-          NKAFU VANIC
+          Nkafu Vanic
         </a>
 
         <ul className="permalinks">

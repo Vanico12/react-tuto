@@ -6,6 +6,7 @@ import AV2 from "../../assets/Avat1.jpg";
 import AV3 from "../../assets/Vanic.jpg";
 import AV4 from "../../assets/Vanic.jpg";
 import AV5 from "../../assets/Vanic.jpg";
+import AV6 from "../../assets/client.jpg";
 
 // import Swiper core and required modules
 import { Pagination, Navigation, Scrollbar, A11y } from 'swiper';
@@ -24,43 +25,50 @@ export const Testimonial = () => {
       testimonial:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus est, consequatur illum ullam numquam voluptate necessitatibus sequi quidem obcaecati! Veritatis repellendus provident neque. Porro, id illum iure soluta vel alias, maiores tempora doloremque vitae neque maxime at, facilis ipsum molestiae dicta quasi harum optio atque deserunt quis amet consectetur perspiciatis.",
       avatar: IMG,
-      Cname: "Client 1",
+      Cname: "Blessing Cho",
     },
     {
       id: 2,
       testimonial:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus est, consequatur illum ullam numquam voluptate necessitatibus sequi quidem obcaecati! Veritatis repellendus provident neque. Porro, id illum iure soluta vel alias, maiores tempora doloremque vitae neque maxime at, facilis ipsum molestiae dicta quasi harum optio atque deserunt quis amet consectetur perspiciatis.",
       avatar: AV1,
-      Cname: "Client 2",
+      Cname: "Hackaton Stone",
     },
     {
       id: 3,
       testimonial:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus est, consequatur illum ullam numquam voluptate necessitatibus sequi quidem obcaecati! Veritatis repellendus provident neque. Porro, id illum iure soluta vel alias, maiores tempora doloremque vitae neque maxime at, facilis ipsum molestiae dicta quasi harum optio atque deserunt quis amet consectetur perspiciatis.",
       avatar: AV2,
-      Cname: "Client 3",
+      Cname: "Conners John",
     },
     {
       id: 4,
       testimonial:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus est, consequatur illum ullam numquam voluptate necessitatibus sequi quidem obcaecati! Veritatis repellendus provident neque. Porro, id illum iure soluta vel alias, maiores tempora doloremque vitae neque maxime at, facilis ipsum molestiae dicta quasi harum optio atque deserunt quis amet consectetur perspiciatis.",
       avatar: AV3,
-      Cname: "Client 4",
+      Cname: "Mercy Laval",
     },
     {
       id: 5,
       testimonial:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus est, consequatur illum ullam numquam voluptate necessitatibus sequi quidem obcaecati! Veritatis repellendus provident neque. Porro, id illum iure soluta vel alias, maiores tempora doloremque vitae neque maxime at, facilis ipsum molestiae dicta quasi harum optio atque deserunt quis amet consectetur perspiciatis.",
-      avatar: AV5,
-      Cname: "Client 5",
+      avatar: AV4,
+      Cname: "Amper Amy",
     },
     {
       id: 6,
       testimonial:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus est, consequatur illum ullam numquam voluptate necessitatibus sequi quidem obcaecati! Veritatis repellendus provident neque. Porro, id illum iure soluta vel alias, maiores tempora doloremque vitae neque maxime at, facilis ipsum molestiae dicta quasi harum optio atque deserunt quis amet consectetur perspiciatis.",
-      avatar: AV4,
-      Cname: "Client 6",
+      avatar: AV5,
+      Cname: "Clint Cliff",
     },
+  {
+    id: 6,
+    testimonial:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus est, consequatur illum ullam numquam voluptate necessitatibus sequi quidem obcaecati! Veritatis repellendus provident neque. Porro, id illum iure soluta vel alias, maiores tempora doloremque vitae neque maxime at, facilis ipsum molestiae dicta quasi harum optio atque deserunt quis amet consectetur perspiciatis.",
+    avatar: AV6,
+    Cname: "Clifford Steve",
+  }
   ];
   return (
     <section id="testimonial">
@@ -77,7 +85,9 @@ export const Testimonial = () => {
           return (
             <SwiperSlide key={testi.id} className="testimonial">
               <div className="client__avatar">
-                <img src={testi.avatar} alt="client avatar" />
+              <img src={AV6} alt="client"/>
+                <h5 className="client__name">Hackaton Blessing</h5>
+                <small className="client__review"></small>
               </div>
               <h5 className="client__name"> {testi.Cname} </h5>
               <small className="client__review"> {testi.testimonial} </small>

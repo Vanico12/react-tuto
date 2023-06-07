@@ -12,7 +12,7 @@ const Contact = () => {
   const sendEmail = (e) => {
       e.preventDefault();
 
-      emailjs.sendForm('service_5vuauza', 'template_fdnnl56', form.current, 'EmSdUNQzQuxkUqGWx')
+      emailjs.sendForm('service_zgcp2zr', 'template_v9q51cf', form.current, 'wQrbk5tnk-cH903zb')
       e.target.reset() 
       .then((result) => {
         console.log(result.text)
@@ -30,7 +30,7 @@ const Contact = () => {
             <article className="contact__option">
               <MdOutlineEmail className="contact__option__icon" />
               <h4>Email</h4>
-              <h5>myEmail@gmail.com</h5>
+              <h5>nkafuvanic760@gmail.com</h5>
               <a
                 href="mailto:nkafuvanic760@gmail.com"
                 target="_blank"
@@ -45,7 +45,7 @@ const Contact = () => {
               <h4>LinkedIn</h4>
               <h5>Profile</h5>
               <a
-                href="https://www.linkedin.com/in/brown-djomo-844b96164/"
+                href="https://www.linkedin.com/in/nkafu-vanic-350351271/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -68,23 +68,23 @@ const Contact = () => {
           </div>
 
           <form ref={form} onSubmit={sendEmail}>
-            <input type="text" name="name" placeholder="full name" required />
+            <input type="text" name="name" placeholder="Your Full Name" required />
             <input
               type="email"
               name="email"
-              placeholder="your email"
+              placeholder="Your Email"
               required
             />
             <textarea
-              name="message"
+              name="Message"
               id="message"
               cols="30"
               rows="10"
-              placeholder="your message"
+              placeholder="Your Message"
               required
             ></textarea>
             <button type="submit" className="btn btn-primary">
-              Testified
+              Send Message
             </button>
           </form>
         </div>
